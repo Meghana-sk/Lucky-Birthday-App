@@ -1,0 +1,11 @@
+body {
+  display: block;
+}
+
+.container center-div {
+  margin: 0 auto;
+}
+
+p {
+  text-align: center;
+}
