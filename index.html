@@ -4,17 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Lucky Birthday</title>
   </head>
   <body>
     <div class="container">
-      <p id="privacy-notice">Privacy Notice: Your data is not stored!!!</p>
-      <label for="date-picker">Choose your birthday</label>
-      <input type="date" name="date-picker" id="date-picker" />
-      <label for="lucky-number">Your Lucky number</label>
-      <input type="number" name="lucky-number" id="lucky-number" />
-      <button id="check-btn">Check</button>
-      <p id="birthday-msg"></p>
+      <h2>Lucky Birthday!!</h2>
+      <div class="child-container">
+        <p id="privacy-notice">Privacy Notice: Your data is not stored!!!</p>
+        <label for="date-picker">Choose your birthday</label>
+        <input type="date" name="date-picker" id="date-picker" />
+        <label for="lucky-number">Your Lucky number</label>
+        <input type="number" name="lucky-number" id="lucky-number" />
+        <button id="check-btn">Check</button>
+        <p id="birthday-msg"></p>
+        <div class="gif"><img src="" alt="" id="lucky-bday-img" /></div>
+      </div>
     </div>
   </body>
   <script src="app.js"></script>
