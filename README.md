@@ -1,5 +1,11 @@
 # Lucky-Birthday-App
 
-## Problem statement: Check your birthday is lucky after providing your date of birth and lucky number 
+#### Problem statement: Check your birthday is lucky after providing your date of birth and lucky number
 
-<a href="https://github.com/neogcamp/build/blob/main/basics/is-your-birthday-lucky.md">Problem statement</a>
+- Input birthdate
+- Input Lucky number
+- Sum of birthdate digits / lucky number will decide if your birthday is lucky
+
+#### Tech stack - HTML, CSS, Javascript and netlify for hosting
+
+#### Try the project at [LuckyBirthday](https://luckybirthdayvalidator.netlify.app/)
