@@ -18,19 +18,24 @@ function sumOfDateDigits(DOB) {
 
 function chekYourBirthdayLucky() {
     let sum = sumOfDateDigits(datepicker.value)
-     if (datepicker.value && luckyNumber.value) {
+     if (datepicker.value && luckyNumber.value > 0) {
         if (sum % Number(luckyNumber.value) === 0) {
             bdayMsg.style.display = "block";
             luckygif.style.display = "block";
             luckygif.src = "congrats-hooray.gif"
-            bdayMsg.innerHTML = "Hurray. Your birthday is lucky";
+            bdayMsg.innerHTML = "Hurray!. Your birthday is lucky";
        
         } else { 
             bdayMsg.style.display = "block";
             luckygif.style.display = "block";
             luckygif.src = "oops.gif";
-            bdayMsg.innerHTML = "Oops. Your birthday is not lucky"; 
+            bdayMsg.innerHTML = "Oops!. Your birthday is not lucky"; 
         }
+    } else {
+        bdayMsg.innerHTML = "Enter valid lucky number!!!";
+        bdayMsg.style.display = null;
+        luckygif.style.display = null;
+        luckygif.src = null;
     }
 }
 
