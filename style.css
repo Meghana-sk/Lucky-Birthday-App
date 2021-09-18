@@ -46,9 +46,9 @@ label {
   display: block;
   margin: auto;
 }
+
 button {
   margin: auto;
-  margin-top: 1rem;
   padding: 0.5rem;
   background-color: var(--header-footer-color);
   border-radius: 5px;
