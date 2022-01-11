@@ -5,16 +5,16 @@ const bdayMsg = document.querySelector("#birthday-msg");
 const luckygif = document.querySelector("#lucky-bday-img");
 bdayMsg.style.display = "none";
 
-function sumOfDateDigits(DOB) {
+const sumOfDateDigits = (DOB) => {
   DOB = DOB.replaceAll("-", 0);
   let sumOfDigits = 0;
   for (let i = 0; i < DOB.length; i++) {
     sumOfDigits += Number(DOB[i]);
   }
   return sumOfDigits;
-}
+};
 
-function chekYourBirthdayLucky() {
+const chekYourBirthdayLucky = () => {
   let sum = sumOfDateDigits(datepicker.value);
   if (datepicker.value && luckyNumber.value > 0) {
     if (sum % Number(luckyNumber.value) === 0) {
@@ -43,6 +43,6 @@ function chekYourBirthdayLucky() {
     luckygif.style.display = null;
     luckygif.src = null;
   }
-}
+};
 
 checkBtn.addEventListener("click", chekYourBirthdayLucky);
